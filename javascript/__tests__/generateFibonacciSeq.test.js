@@ -1,0 +1,2 @@
+const {generateFibonacciSeq} = require('../generateFibonacciSeq');
+
