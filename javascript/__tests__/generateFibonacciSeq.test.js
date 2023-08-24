@@ -37,4 +37,13 @@ describe('generateFibonacciSeq', () => {
     expect(actual2).toEqual(expected2); 
     expect(actual3).toEqual(expected3); 
   });
+  test('Should return [] from input below 1', () => { 
+    //arrange 
+    const expected = []; 
+    const input = 0; 
+    //act 
+    const actual = generateFibonacciSeq(input); 
+    //assert 
+    expect(actual).toEqual(expected); 
+  });
 });

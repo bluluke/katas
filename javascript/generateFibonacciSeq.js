@@ -1,4 +1,7 @@
 const generateFibonacciSeq = (seqLength) => {
+    if(seqLength < 1) {
+        return []
+    }
     if(seqLength === 1) {
         return [0]
     } else if(seqLength === 2) {
