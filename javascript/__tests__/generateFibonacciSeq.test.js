@@ -10,4 +10,13 @@ describe('generateFibonacciSeq', () => {
     //assert 
     expect(actual).toEqual(expected); 
   }); 
+  test('Should return [0, 1] from input of 2', () => { 
+    //arrange 
+    const expected = [0, 1]; 
+    const input = 2; 
+    //act 
+    const actual = generateFibonacciSeq(input); 
+    //assert 
+    expect(actual).toEqual(expected); 
+  });
 });
