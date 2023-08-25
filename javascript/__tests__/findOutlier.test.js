@@ -12,6 +12,6 @@ describe('findOutlier', () => {
     //act 
     const actual1 = findOutlier(input1); 
     //assert 
-    expect(actual1).toEqual(expected1); 
+    expect(actual1).toBe(expected1); 
   }); 
 });
