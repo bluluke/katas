@@ -1,7 +1,7 @@
 const { findOutlier } = require('../findOutlier'); 
 
 describe('findOutlier', () => { 
-  test('Should return the single odd number from array of 3 numbers', () => { 
+  test('Should return the single odd number from array of numbers', () => { 
     //arrange 
     const expected1 = 13; 
     const expected2 = 101; 
