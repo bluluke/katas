@@ -10,11 +10,7 @@ numsArray.forEach((num) => {
         oddArray.push(num)
     }
 })
-if(oddArray.length === 1) {
-    return oddArray[0];
-} else {
-    return evenArray[0]
-}
+return oddArray.length === 1 ? oddArray[0] : evenArray[0]
 }
 
 
