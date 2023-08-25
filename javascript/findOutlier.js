@@ -12,6 +12,8 @@ numsArray.forEach((num) => {
 })
 if(oddArray.length === 1) {
     return oddArray[0];
+} else {
+    return evenArray[0]
 }
 }
 
