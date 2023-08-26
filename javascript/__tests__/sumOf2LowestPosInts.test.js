@@ -59,4 +59,22 @@ describe('Should return ', () => {
     expect(actual2).toBe(expected2); 
     expect(actual3).toBe(expected3); 
   });
+  test('Should return sum of 2 lowest positive integers from array including integers and floating points', () => { 
+    //arrange 
+    const expected1 = 27; 
+    const expected2 = 7; 
+    const expected3 = 85; 
+
+    const input1 = [14, 12.6, -9, 13]; 
+    const input2 = [2, 4.5, 5, -88, 35]; 
+    const input3 = [439, 289, 46, 33.5, 39, -76]; 
+    //act 
+    const actual1 = sumOf2LowestPosInts(input1); 
+    const actual2 = sumOf2LowestPosInts(input2); 
+    const actual3 = sumOf2LowestPosInts(input3); 
+    //assert 
+    expect(actual1).toBe(expected1); 
+    expect(actual2).toBe(expected2); 
+    expect(actual3).toBe(expected3); 
+  });
 });
