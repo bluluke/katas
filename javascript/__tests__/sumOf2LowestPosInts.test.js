@@ -41,7 +41,7 @@ describe('Should return ', () => {
     expect(actual2).toBe(expected2);
     expect(actual3).toBe(expected3);
   });
-  test('Should return sum pf 2 lowest postive integers from array of positive and negative integers', () => { 
+  test('Should return sum of 2 lowest postive integers from array of positive and negative integers', () => { 
     //arrange 
     const expected1 = 13; 
     const expected2 = 590; 
