@@ -1,0 +1,1 @@
+const { sumOf2LowestPosInts} = require('../sumOf2LowestPosInts');
