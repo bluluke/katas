@@ -23,4 +23,22 @@ describe('Should return ', () => {
     expect(actual1).toBe(expected1); 
     expect(actual2).toBe(expected2)
   });
+  test('Should return sum of 2 lowest lowest positive integers from array of varying length', () => { 
+    //arrange 
+    const expected1 = 17; 
+    const expected2 = 2; 
+    const expected3 = 23456; 
+
+    const input1 = [14, 99, 105, 3, 63, 10000]; 
+    const input2 = [1, 2, 1, 7, 93]; 
+    const input3 = [100000, 20000, 3456, 800003, 987987987]; 
+    //act 
+    const actual1 = sumOf2LowestPosInts(input1); 
+    const actual2 = sumOf2LowestPosInts(input2); 
+    const actual3 = sumOf2LowestPosInts(input3); 
+    //assert 
+    expect(actual1).toBe(expected1); 
+    expect(actual2).toBe(expected2);
+    expect(actual3).toBe(expected3);
+  });
 });
