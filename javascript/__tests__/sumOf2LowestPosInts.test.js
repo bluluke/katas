@@ -41,4 +41,22 @@ describe('Should return ', () => {
     expect(actual2).toBe(expected2);
     expect(actual3).toBe(expected3);
   });
+  test('Should return sum pf 2 lowest postive integers from array of positive and negative integers', () => { 
+    //arrange 
+    const expected1 = 13; 
+    const expected2 = 590; 
+    const expected3 = 40; 
+
+    const input1 = [-9, 7, 89, -22, 600, 6]; 
+    const input2 = [300, -8, 301, -1, 290]; 
+    const input3 = [45, 25, 90, -5, -90, 30, 15]; 
+    //act 
+    const actual1 = sumOf2LowestPosInts(input1);
+    const actual2 = sumOf2LowestPosInts(input2);
+    const actual3 = sumOf2LowestPosInts(input3); 
+    //assert 
+    expect(actual1).toBe(expected1); 
+    expect(actual2).toBe(expected2); 
+    expect(actual3).toBe(expected3); 
+  });
 });
