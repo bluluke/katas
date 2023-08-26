@@ -1,5 +1,6 @@
 const sumOf2LowestPosInts = (numArray) => {
-    return numArray[0] + numArray[1];
+    const sortedNums = numArray.sort((a, b) => a - b);
+    return sortedNums[0] + sortedNums[1];
 }
 
 
