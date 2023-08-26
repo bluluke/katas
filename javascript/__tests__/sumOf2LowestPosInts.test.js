@@ -77,4 +77,20 @@ describe('Should return ', () => {
     expect(actual2).toBe(expected2); 
     expect(actual3).toBe(expected3); 
   });
+  test('Should return null if input array does not contain at least 2 postive integers', () => { 
+    //arrange 
+    const expected = null; 
+
+    const input1 = [87, 33.3, -9, -80, 44.5]; 
+    const input2 = [-3, 0, -39, 4, 4.2, 7.9]; 
+    const input3 = [2345.6, 8.9, -9, -33, -57, 3.4]; 
+    //act 
+    const actual1 = sumOf2LowestPosInts(input1); 
+    const actual2 = sumOf2LowestPosInts(input2); 
+    const actual3 = sumOf2LowestPosInts(input3); 
+    //assert 
+    expect(actual1).toBe(expected); 
+     expect(actual2).toBe(expected); 
+      expect(actual3).toBe(expected); 
+  });
 });
