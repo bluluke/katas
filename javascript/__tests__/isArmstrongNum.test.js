@@ -28,4 +28,25 @@ describe.only('isArmstrongNum', () => {
       //assert 
       expect(actual).toBe(expected); 
   });
+  test('Should return true from input of 370, 371, 1634, 8208, 9474, ', () => { 
+    //arrange 
+    const expected = true; 
+    const input1 = 370;
+    const input2 = 371;
+    const input3 = 407;
+    const input4 = 1634;
+    const input5 = 8208; 
+    //act 
+    const actual1 = isArmstrongNum(input1); 
+    const actual2 = isArmstrongNum(input2); 
+    const actual3 = isArmstrongNum(input3); 
+    const actual4 = isArmstrongNum(input4); 
+    const actual5 = isArmstrongNum(input5); 
+    //assert 
+    expect(actual1).toBe(expected); 
+    expect(actual2).toBe(expected); 
+    expect(actual3).toBe(expected); 
+    expect(actual4).toBe(expected); 
+    expect(actual5).toBe(expected); 
+});
 });
