@@ -19,4 +19,13 @@ describe.only('isArmstrongNum', () => {
      //assert 
      expect(actual).toBe(expected); 
   });
+  test('Should return true from input of 153', () => { 
+      //arrange 
+      const expected = true; 
+      const input = 153; 
+      //act 
+      const actual = isArmstrongNum(input); 
+      //assert 
+      expect(actual).toBe(expected); 
+  });
 });
