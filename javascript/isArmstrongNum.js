@@ -1,5 +1,7 @@
-const isArmstrongNum = () => {
-
+const isArmstrongNum = (num) => {
+    if(num === 0) {
+        return true;
+    }
 }
 
 
