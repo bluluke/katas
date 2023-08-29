@@ -29,6 +29,7 @@ describe('Makify', () => {
     expect(actual3).toBe(expected3); 
   });
   test('Should return string input with all characters replaced with # except for last 4', () => { 
+    //arange
     const expected1 = "####fghd"; 
     const expected2 ="#0976"; 
     const expected3 = "#####jdhf"; 
@@ -47,22 +48,3 @@ describe('Makify', () => {
   });
 });
 
-
-
-
-
-    // const expected = ; 
-    // const expected = ; 
-    // const expected = ; 
-
-    // const input = ; 
-    // const input = ; 
-    // const input = ; 
-    // //act 
-    // const actual = maskify(input); 
-    // const actual = maskify(input); 
-    // const actual = maskify(input); 
-    // //assert 
-    // expect(actual).toBe(expected); 
-    // expect(actual).toBe(expected); 
-    // expect(actual).toBe(expected); 
