@@ -1,5 +1,7 @@
-const maskify = () => {
-
+const maskify = (password) => {
+    if( password === '') {
+        return '';
+    }
 }
 
 
