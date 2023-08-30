@@ -1,0 +1,1 @@
+const { categoriseMembers } = require('../categoriseMembers');
