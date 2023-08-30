@@ -65,6 +65,16 @@ describe('categoriseMembers', () => {
     expect(actual2).toEqual(expected2); 
     expect(actual3).toEqual(expected3); 
   });
+  test('Should not alter input', () => { 
+    //arrange 
+
+    const input = [[39, 14], [41, 20], [58, 15], [72, 17], [85, 18]]; 
+    const inputCopy = [[39, 14], [41, 20], [58, 15], [72, 17], [85, 18]]
+    //act 
+    categoriseMembers(input)
+    //assert 
+    expect(input).toEqual(inputCopy); 
+  });
 });
 
 
