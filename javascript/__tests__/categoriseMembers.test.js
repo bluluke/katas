@@ -28,7 +28,7 @@ describe('categoriseMembers', () => {
     expect(actual2).toEqual(expected2); 
     expect(actual3).toEqual(expected3); 
   });
-  test.only('Should return array of multiple strings with value "senior" from input array of array pairs, which contain both an age integer over 54 and a handicap over 7', () => { 
+  test('Should return array of multiple strings with value "senior" from input array of array pairs, which contain both an age integer over 54 and a handicap over 7', () => { 
     //arrange 
     const expected1 = ["senior", "senior", "senior"]; 
     const expected2 = ["senior", "senior", "senior", "senior"]; 
@@ -42,6 +42,24 @@ describe('categoriseMembers', () => {
     const actual2 = categoriseMembers(input2); 
     const actual3 = categoriseMembers(input3); 
 
+    //assert 
+    expect(actual1).toEqual(expected1); 
+    expect(actual2).toEqual(expected2); 
+    expect(actual3).toEqual(expected3); 
+  });
+  test('Should return array of multiple strings with value of either "senior" or "open" depeneding on input array or array pairs', () => { 
+    //arrange 
+    const expected1 = ['senior', 'open', 'open']; 
+    const expected2 = ['open', 'senior', 'senior', 'open']; 
+    const expected3 = ['open', 'open', 'senior', 'senior', 'senior']; 
+
+    const input1 = [[67, 8], [34, 9], [45, 3]]; 
+    const input2 = [[89, 2], [89, 8], [56, 8], [56, 6]]; 
+    const input3 = [[39, 14], [41, 20], [58, 15], [72, 17], [85, 18]]; 
+    //act 
+    const actual1 = categoriseMembers(input1); 
+    const actual2 = categoriseMembers(input2); 
+    const actual3 = categoriseMembers(input3); 
     //assert 
     expect(actual1).toEqual(expected1); 
     expect(actual2).toEqual(expected2); 
