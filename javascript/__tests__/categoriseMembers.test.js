@@ -75,6 +75,14 @@ describe('categoriseMembers', () => {
     //assert 
     expect(input).toEqual(inputCopy); 
   });
+  test('Output should have different reference value to input', () => { 
+    //arrange 
+    const input = [[89, 2], [89, 8], [56, 8], [56, 6]]; 
+    //act 
+    const actual = categoriseMembers(input); 
+    //assert 
+    expect(input).not.toBe(actual); 
+  });
 });
 
 
