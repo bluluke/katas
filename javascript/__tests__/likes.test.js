@@ -36,4 +36,21 @@ describe('Likes', () => {
       expect(actual2).toBe(expected2);
       expect(actual3).toBe(expected3);
     });
+    test('Should return (input array item 1), (input array item 2) and (input array item 3) like this from input array containing 3 strings', () => { 
+          //arrange 
+          const expected1 = 'Frank, Sandra and Barbera like this'; 
+          const expected2 = 'Sarah, Kevin and Jessica like this'; 
+          const expected3 = 'Paul, Hannah and Deborah like this'; 
+          const input1 = ['Frank', 'Sandra', 'Barbera']; 
+          const input2 = ['Sarah', "Kevin", 'Jessica']; 
+          const input3 = ['Paul', 'Hannah', 'Deborah']; 
+          //act 
+          const actual1 = likes(input1); 
+          const actual2 = likes(input2); 
+          const actual3 = likes(input3); 
+          //assert 
+          expect(actual1).toBe(expected1); 
+          expect(actual2).toBe(expected2); 
+          expect(actual3).toBe(expected3); 
+    });
 });
