@@ -79,4 +79,12 @@ describe('Likes', () => {
         //assert 
         expect(input).toEqual(copyInput); 
     });
+    test('Output should not have same reference as input', () => { 
+      //arrange 
+      const input = ['Sarah', "Kevin", 'Jessica', 'Frank', 'Sandra', 'Barbera', 'Deborah']; 
+      //act 
+      const actual = likes(input)
+      //assert 
+      expect(actual).not.toBe(input); 
+    });
 });
