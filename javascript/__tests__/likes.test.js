@@ -10,4 +10,13 @@ describe('Likes', () => {
     //assert 
     expect(actual).toBe(expected); 
     });
+    test('Should return Emma likes this from input of array containing string "Emma"', () => { 
+      //arrange 
+      const expected = 'Emma likes this'; 
+      const input = ["Emma"]; 
+      //act 
+      const actual = likes(input); 
+      //assert 
+      expect(actual).toBe(expected); 
+    });
 });
