@@ -52,6 +52,23 @@ describe('maxSequence', () => {
     expect(actual2).toEqual(expected2); 
     expect(actual3).toEqual(expected3); 
   });
+  test('Should return subsequence with highest sum from input array', () => { 
+       //arrange 
+       const expected1 = [6, 7]; 
+       const expected2 = [8, 9]; 
+       const expected3 = [5, 15, 22, 19, 26]; 
+       const input1 = [4, -9, 6, 7, -5]; 
+       const input2 = [-22, 4, 3, 7, -15, 8, 9];
+       const input3 = [4, -6, 5, 15, 22, 19, 26, -4];
+       //act 
+       const actual1 = maxSequence(input1); 
+       const actual2 = maxSequence(input2); 
+       const actual3 = maxSequence(input3); 
+       //assert 
+       expect(actual1).toEqual(expected1); 
+       expect(actual2).toEqual(expected2); 
+       expect(actual3).toEqual(expected3); 
+  });
 });
 
 
