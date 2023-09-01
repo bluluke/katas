@@ -78,6 +78,15 @@ describe('maxSequence', () => {
         //assert 
         expect(actual).toEqual(expected); 
   });
+  test('Should not alter input', () => { 
+        //arrange  
+        const input = [-22, 4, 3, 7, -15, 8, 9]; 
+        const copyInput = [-22, 4, 3, 7, -15, 8, 9]
+        //act 
+        maxSequence(input);
+        //assert 
+        expect(copyInput).toEqual(input); 
+  });
 });
 
 
