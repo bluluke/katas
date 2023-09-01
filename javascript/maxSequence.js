@@ -1,4 +1,9 @@
 const maxSequence = (numArr) => {
+
+    if(numArr.length === 0) {
+        return [];
+    }
+
     let allPositive = true;
     let allNegative = true; 
     const result = numArr.forEach((num) => {

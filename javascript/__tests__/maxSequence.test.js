@@ -69,6 +69,15 @@ describe('maxSequence', () => {
        expect(actual2).toEqual(expected2); 
        expect(actual3).toEqual(expected3); 
   });
+  test('Should return empty array input of empty array', () => { 
+        //arrange 
+        const expected = []; 
+        const input = []; 
+        //act 
+        const actual = maxSequence(input); 
+        //assert 
+        expect(actual).toEqual(expected); 
+  });
 });
 
 
