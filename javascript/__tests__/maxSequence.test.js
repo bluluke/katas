@@ -1,0 +1,2 @@
+const { maxSequence } = require('../maxSequence');
+
