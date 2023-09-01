@@ -35,7 +35,7 @@ describe('maxSequence', () => {
     expect(actual2).toBe(expected); 
     expect(actual3).toBe(expected); 
   });
-  test.only('Should return subsequence which excludes single negative integer from input array', () => { 
+  test('Should return subsequence which excludes single negative integer from input array', () => { 
     //arrange 
     const expected1 = [4, 6, 7]; 
     const expected2 = [4, 3, 7, 8, 9]; 
