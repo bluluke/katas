@@ -19,6 +19,22 @@ describe('maxSequence', () => {
     expect(actual2).toEqual(expected2); 
     expect(actual3).toEqual(expected3); 
   }); 
+  test('Should return 0 from input array of only negative numbers', () => { 
+        //arrange 
+    const expected = 0;
+
+    const input1 = [-4, -25, -5]; 
+    const input2 = [-4, -96, -46, -37, -49, -79]; 
+    const input3 = [-35, -23, -29, -83, -51, -894, -45];  
+    //act 
+    const actual1 = maxSequence(input1); 
+    const actual2 = maxSequence(input2);
+    const actual3 = maxSequence(input3);
+    //assert 
+    expect(actual1).toBe(expected); 
+    expect(actual2).toBe(expected); 
+    expect(actual3).toBe(expected); 
+  });
 });
 
 
