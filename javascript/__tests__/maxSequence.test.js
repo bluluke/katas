@@ -87,6 +87,14 @@ describe('maxSequence', () => {
         //assert 
         expect(copyInput).toEqual(input); 
   });
+  test('Output should not have same reference as input', () => {
+    //arrange
+    const input = [-22, 4, 3, 7, -15, 8, 9];
+    //act
+    const actual = maxSequence(input);
+    //assert
+    expect(actual).not.toBe(input)
+  })
 });
 
 
