@@ -1,7 +1,7 @@
 const spaceBeforeHump = (inputString) => {
     const stringToChange = inputString;
-    const arrayWithSpaceBeforeHump = Array.prototype.map.call( stringToChange, (char) => {
-        if(isUpperCase(char)) {
+    const arrayWithSpaceBeforeHump = Array.prototype.map.call( stringToChange, (char, index) => {
+        if(isUpperCase(char) && index !== 0) {
             return ` ${char}`
         } else {
             return char

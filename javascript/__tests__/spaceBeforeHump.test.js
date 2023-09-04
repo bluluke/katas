@@ -46,4 +46,22 @@ describe('spaceBeforeHump', () => {
      expect(actual2).toBe(expected2); 
      expect(actual3).toBe(expected3);  
   });
+  test('Should not put space before first letter of input if upper case', () => { 
+     //arrange 
+     const expected1 = 'Apples And Oranges'; 
+     const expected2 = 'Fish And Chips';
+     const expected3 = 'The Sad Turtle Laments';
+ 
+     const input1 = 'ApplesAndOranges'; 
+     const input2 = 'FishAndChips'; 
+     const input3 = 'TheSadTurtleLaments'; 
+     //act 
+     const actual1 = spaceBeforeHump(input1); 
+     const actual2 = spaceBeforeHump(input2); 
+     const actual3 = spaceBeforeHump(input3); 
+     //assert 
+     expect(actual1).toBe(expected1); 
+     expect(actual2).toBe(expected2); 
+     expect(actual3).toBe(expected3); 
+  });
 });
