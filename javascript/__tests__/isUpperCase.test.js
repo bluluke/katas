@@ -1,7 +1,7 @@
 const { isUpperCase } = require('../spaceBeforeHump')
 
 
-describe.only('isUpperCase', () => { 
+describe('isUpperCase', () => { 
   test('Should return true from input string of single upper case letter', () => { 
     //arrange 
     const expected = true; 
