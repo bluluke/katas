@@ -10,7 +10,7 @@ describe('spaceBeforeHump', () => {
     //assert 
     expect(actual).toBe(expected); 
   }); 
-  test.only('Should return 2 word string input with space between words', () => { 
+  test('Should return 2 word string input with space between words', () => { 
     //arrange 
     const expected1 = 'apple Orange'; 
     const expected2 = 'fish Chips';
@@ -27,5 +27,23 @@ describe('spaceBeforeHump', () => {
     expect(actual1).toBe(expected1); 
     expect(actual2).toBe(expected2); 
     expect(actual3).toBe(expected3); 
+  });
+  test('Should return multiple word stirng input with space between words', () => { 
+     //arrange 
+     const expected1 = 'apples And Oranges'; 
+     const expected2 = 'fish And Chips';
+     const expected3 = 'the Happy Dog Runs';
+ 
+     const input1 = 'applesAndOranges'; 
+     const input2 = 'fishAndChips'; 
+     const input3 = 'theHappyDogRuns'; 
+     //act 
+     const actual1 = spaceBeforeHump(input1); 
+     const actual2 = spaceBeforeHump(input2); 
+     const actual3 = spaceBeforeHump(input3); 
+     //assert 
+     expect(actual1).toBe(expected1); 
+     expect(actual2).toBe(expected2); 
+     expect(actual3).toBe(expected3);  
   });
 });
