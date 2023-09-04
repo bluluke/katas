@@ -4,8 +4,9 @@ const spaceBeforeHump = (inputString) => {
 }
 
 // util function for spaceBeforeHump
-function isUpperCase() {
-
+function isUpperCase(charToCheck) {
+    const upperCaseRegex = /[A-Z]/;
+    return upperCaseRegex.test(charToCheck);
 }
 
-module.exports = { spaceBeforeHump };
+module.exports = { spaceBeforeHump, isUpperCase };
