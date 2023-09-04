@@ -1,6 +1,14 @@
 const spaceBeforeHump = (inputString) => {
-    let stringToChange = inputString;
-    return stringToChange;
+    const stringToChange = inputString;
+    const arrayWithSpaceBeforeHump = Array.prototype.map.call( stringToChange, (char) => {
+        if(isUpperCase(char)) {
+            return ` ${char}`
+        } else {
+            return char
+        }
+    })
+    const joinedString  = arrayWithSpaceBeforeHump.join('');
+    return joinedString;
 }
 
 // util function for spaceBeforeHump
