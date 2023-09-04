@@ -1,5 +1,6 @@
-const spaceBeforeHump = () => {
-
+const spaceBeforeHump = (inputString) => {
+    let stringToChange = inputString;
+    return stringToChange;
 }
 
 
