@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD to keep my problem-solving sk
 
 ## Javascript Function Descriptions:
 
+spaceBeforeHum:  returns an input string using camel case with a space before each hump. 
+
 maxSequence: returns subsequence with highest sum from array of integers.
 
 likes: returns appropriate message describng who likes something, which is dependent on input array of string names. 
