@@ -64,4 +64,13 @@ describe('spaceBeforeHump', () => {
      expect(actual2).toBe(expected2); 
      expect(actual3).toBe(expected3); 
   });
+  test('Should return emptry string from input of empty string', () => { 
+    //arrange 
+    const expected = ''; 
+    const input = ''; 
+    //act 
+    const actual = spaceBeforeHump(input); 
+    //assert 
+    expect(actual).toBe(expected); 
+  });
 });
