@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD to keep my problem-solving sk
 
 ## Javascript Function Descriptions:
 
+countInNestedArrays: returns the number of instances of the second argument that are present if the first argument which is an array/nested array.
+ 
 spaceBeforeHum:  returns an input string using camel case with a space before each hump. 
 
 maxSequence: returns subsequence with highest sum from array of integers.
