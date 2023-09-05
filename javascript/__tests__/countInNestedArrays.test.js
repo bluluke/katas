@@ -104,6 +104,16 @@ describe('countInNestedArrays', () => {
 
         //assert 
         expect(actual).toBe(expected); 
+     });
+        test('Should return empty array from second argument input of empty string', () => { 
+        //arrange 
+        const expected = []; 
+        const inputA = [];
+        const inputB = '';
+        //act 
+        const actual = countInNestedArrays(inputA, inputB); 
+        //assert 
+        expect(actual).toEqual(expected); 
     });
 });
 
