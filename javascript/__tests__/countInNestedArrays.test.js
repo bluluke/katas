@@ -69,6 +69,30 @@ describe('countInNestedArrays', () => {
         expect(actual2).toBe(expected2); 
         expect(actual3).toBe(expected3); 
       });
+      test('Should return number of instances of 2nd argument value in first argument array containing multiple nested arrays', () => { 
+        //arrange 
+        const expected1 = 5; 
+        const expected2 = 8; 
+        const expected3 = 5; 
+    
+        const input1A = ['a', ['a', 'g'], 'b', ['a', 'c', 'd', ['a', 'r', 'p', ['y', 'a']]]]; 
+        const input1B = 'a'; 
+    
+        const input2A = [1, 4, 3, [3, 4], 4, [4, 4, 4, [1, 2, [4, 4]]]]; 
+        const input2B = 4; 
+    
+        const input3A = [['d', 'e', ['d', ['e']]], 'e', 'e', 'f', ['m', 'n', 'e'],'g']; 
+        const input3B = 'e'; 
+        //act 
+        const actual1 = countInNestedArrays(input1A, input1B); 
+        const actual2 = countInNestedArrays(input2A, input2B); 
+        const actual3 = countInNestedArrays(input3A, input3B); 
+        //assert 
+        expect(actual1).toBe(expected1); 
+        expect(actual2).toBe(expected2); 
+        expect(actual3).toBe(expected3); 
+      });
+
 });
 
 
