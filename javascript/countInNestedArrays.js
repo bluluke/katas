@@ -1,6 +1,8 @@
 const countInNestedArrays = (array, value) => {
     let count = 0;
-    if(array[0] === value) count++
+    for(let i = 0; i < array.length; i++) {
+        if(array[i] === value) count++
+    }
     return count;
 }
 
