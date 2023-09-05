@@ -23,7 +23,7 @@ describe('countInNestedArrays', () => {
     expect(actual2).toBe(expected); 
     expect(actual3).toBe(expected); 
   }); 
-  test('Should return number of instances of 2nd argument value in first argument array containing only uniform elements', () => { 
+  test('Should return number of instances of 2nd argument value in first argument array', () => { 
     //arrange 
     const expected1 = 2; 
     const expected2 = 3; 
