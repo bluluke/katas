@@ -92,7 +92,18 @@ describe('countInNestedArrays', () => {
         expect(actual2).toBe(expected2); 
         expect(actual3).toBe(expected3); 
       });
+      test('Should return 0 from first argument input of empty array', () => { 
+        //arrange 
+        const expected = 0; 
 
+        const inputA = [];
+        const inputB = 'f';
+
+        //act 
+        const actual = countInNestedArrays(inputA, inputB); 
+
+        //assert 
+        expect(actual).toBe(expected); 
+    });
 });
-
 
