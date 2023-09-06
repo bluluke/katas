@@ -1,8 +1,7 @@
-const countWhiteSpace = (str) => {
-    if(str === '') return 0;
-    return str[0] === ' '
-        ? 1 + countWhiteSpace(str.slice(1))
-        : countWhiteSpace(str.slice(1));
+const countWhiteSpace = (str, count = 0) => {
+    if(str === '') return count;
+    if(str[0] === ' ') count++;
+    return countWhiteSpace(str.slice(1), count);
 }
 
 module.exports = { countWhiteSpace }
