@@ -62,4 +62,13 @@ describe('countWhiteSpace', () => {
         //assert 
         expect(actual).toBe(expected); 
     });
+   test('Should return 0 from input of empty string', () => { 
+        //arrange 
+        const expected = 0; 
+        const input = ''; 
+        //act 
+        const actual = countWhiteSpace(input); 
+        //assert 
+        expect(actual).toBe(expected); 
+   });
 });
