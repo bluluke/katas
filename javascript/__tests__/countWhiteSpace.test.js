@@ -53,4 +53,13 @@ describe('countWhiteSpace', () => {
         expect(actual2).toBe(expected2); 
         expect(actual3).toBe(expected3); 
     });
+    test('Should return 0 from string with no white spaces', () => { 
+        //arrange 
+        const expected = 0; 
+        const input = 'jwhvedijch7446'; 
+        //act 
+        const actual = countWhiteSpace(input); 
+        //assert 
+        expect(actual).toBe(expected); 
+    });
 });
