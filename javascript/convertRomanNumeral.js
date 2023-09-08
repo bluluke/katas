@@ -14,42 +14,31 @@ const convertRomanNumeral = (romNum) => {
         M: 1000
     }
 
+    const subtractOrAdd = (nextNumeral, currentNumeral) => {
+        if(nextNumeral > currentNumeral) {
+            numericalDecimalInt -= currentNumeral; 
+        } else {
+        numericalDecimalInt += currentNumeral;
+        }
+    }
+    
+
     for(let i = 0; i < arrayedRomNum.length; i++) {
         switch(arrayedRomNum[i]) {
             case 'I':
-                if(romNumRef[arrayedRomNum[i + 1]] > romNumRef[arrayedRomNum[i]]) {
-                    numericalDecimalInt -= 1; 
-                } else {
-                numericalDecimalInt += 1;
-                }
+                subtractOrAdd(romNumRef[arrayedRomNum[i + 1]], romNumRef[arrayedRomNum[i]])
                 break;
             case 'V':
-                if(romNumRef[arrayedRomNum[i + 1]] > romNumRef[arrayedRomNum[i]]) {
-                    numericalDecimalInt -= 5; 
-                } else {
-                numericalDecimalInt += 5;
-                }
+                subtractOrAdd(romNumRef[arrayedRomNum[i + 1]], romNumRef[arrayedRomNum[i]])
                 break;
             case 'X':
-                if(romNumRef[arrayedRomNum[i + 1]] > romNumRef[arrayedRomNum[i]]) {
-                    numericalDecimalInt -= 10; 
-                } else {
-                numericalDecimalInt += 10;
-                }
+                subtractOrAdd(romNumRef[arrayedRomNum[i + 1]], romNumRef[arrayedRomNum[i]])
                 break;
             case 'L':
-                if(romNumRef[arrayedRomNum[i + 1]] > romNumRef[arrayedRomNum[i]]) {
-                    numericalDecimalInt -= 50; 
-                } else {
-                numericalDecimalInt += 50;
-                }
+                subtractOrAdd(romNumRef[arrayedRomNum[i + 1]], romNumRef[arrayedRomNum[i]])
                 break;
             case 'C':
-                if(romNumRef[arrayedRomNum[i + 1]] > romNumRef[arrayedRomNum[i]]) {
-                    numericalDecimalInt -= 100; 
-                } else {
-                numericalDecimalInt += 100;
-                }
+                subtractOrAdd(romNumRef[arrayedRomNum[i + 1]], romNumRef[arrayedRomNum[i]])
                 break;
             case 'D':
                 numericalDecimalInt += 500;
