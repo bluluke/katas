@@ -38,4 +38,76 @@ describe.only('convertRomanNumeral', () => {
         expect(actual6).toBe(expected6); 
         expect(actual7).toBe(expected7); 
   }); 
+  test('Should return value of multiple character input as numerical decimal integer', () => { 
+    // arrange 
+    const expected1 = 3; 
+    const expected2 = 7; 
+    const expected3 = 17; 
+    const expected4 = 75; 
+    const expected5 = 165; 
+    const expected6 = 755; 
+    const expected7 = 1666; 
+
+
+    const input1 = 'III';
+    const input2 = 'VII'; 
+    const input3 = 'XVII'; 
+    const input4 = 'LXXV';
+    const input5 = 'CLXV';
+    const input6 = 'DCCLV'; 
+    const input7 = 'MDCLXVI'; 
+
+    //act 
+    const actual1 = convertRomanNumeral(input1); 
+    const actual2 = convertRomanNumeral(input2); 
+    const actual3 = convertRomanNumeral(input3); 
+    const actual4 = convertRomanNumeral(input4); 
+    const actual5 = convertRomanNumeral(input5); 
+    const actual6 = convertRomanNumeral(input6); 
+    const actual7 = convertRomanNumeral(input7); 
+    //assert 
+    expect(actual1).toBe(expected1); 
+    expect(actual2).toBe(expected2); 
+    expect(actual3).toBe(expected3); 
+    expect(actual4).toBe(expected4); 
+    expect(actual5).toBe(expected5); 
+    expect(actual6).toBe(expected6); 
+    expect(actual7).toBe(expected7); 
+  });
+  test('Should return Roman numeral input using subtractive notation with the value as a numeric decimal integer', () => { 
+   // arrange 
+   const expected1 = 4; 
+   const expected2 = 9; 
+   const expected3 = 40; 
+   const expected4 = 90; 
+   const expected5 = 400; 
+   const expected6 = 900; 
+   const expected7 = 990; 
+
+
+   const input1 = 'IV';
+   const input2 = 'IX'; 
+   const input3 = 'XL'; 
+   const input4 = 'XC';
+   const input5 = 'CD';
+   const input6 = 'CM'; 
+   const input7 = 'XM'; 
+
+   //act 
+   const actual1 = convertRomanNumeral(input1); 
+   const actual2 = convertRomanNumeral(input2); 
+   const actual3 = convertRomanNumeral(input3); 
+   const actual4 = convertRomanNumeral(input4); 
+   const actual5 = convertRomanNumeral(input5); 
+   const actual6 = convertRomanNumeral(input6); 
+   const actual7 = convertRomanNumeral(input7); 
+   //assert 
+   expect(actual1).toBe(expected1); 
+   expect(actual2).toBe(expected2); 
+   expect(actual3).toBe(expected3); 
+   expect(actual4).toBe(expected4); 
+   expect(actual5).toBe(expected5); 
+   expect(actual6).toBe(expected6); 
+   expect(actual7).toBe(expected7); 
+  });
 });
