@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD to keep my problem-solving sk
 
 ## Javascript Function Descriptions:
 
+convertRomanNumeral: takes a Roman numeral as an argument and returns its value as a numeric decimal integer.
+
 countWhiteSpace: returns number of instances of whitespace in input 
 
 countInNestedArrays: returns the number of instances of the second argument that are present if the first argument which is an array/nested array.
