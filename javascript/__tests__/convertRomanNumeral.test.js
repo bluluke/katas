@@ -110,4 +110,51 @@ describe.only('convertRomanNumeral', () => {
    expect(actual6).toBe(expected6); 
    expect(actual7).toBe(expected7); 
   });
+  test('Should return Roman numeral input using both subtractive and additive notation', () => { 
+   // arrange 
+   const expected1 = 254; 
+   const expected2 = 1999; 
+   const expected3 = 609; 
+   const expected4 = 420; 
+   const expected5 = 907; 
+   const expected6 = 4950; 
+   const expected7 = 91; 
+   const expected8 = 290; 
+   const expected9 = 590; 
+   const expected10 = 1640; 
+
+   const input1 = 'CCLIV';
+   const input2 = 'MIM'; 
+   const input3 = 'DCIX'; 
+   const input4 = 'CDXX';
+   const input5 = 'CMVII';
+   const input6 = 'MMMMLM'; 
+   const input7 = 'XCI'; 
+   const input8 = 'CCXC'; 
+   const input9 = 'DXC'; 
+   const input10 = 'MDCXL'; 
+
+   //act 
+   const actual1 = convertRomanNumeral(input1); 
+   const actual2 = convertRomanNumeral(input2); 
+   const actual3 = convertRomanNumeral(input3); 
+   const actual4 = convertRomanNumeral(input4); 
+   const actual5 = convertRomanNumeral(input5); 
+   const actual6 = convertRomanNumeral(input6); 
+   const actual7 = convertRomanNumeral(input7); 
+   const actual8 = convertRomanNumeral(input8); 
+   const actual9 = convertRomanNumeral(input9); 
+   const actual10 = convertRomanNumeral(input10); 
+   //assert 
+   expect(actual1).toBe(expected1); 
+   expect(actual2).toBe(expected2); 
+   expect(actual3).toBe(expected3); 
+   expect(actual4).toBe(expected4); 
+   expect(actual5).toBe(expected5); 
+   expect(actual6).toBe(expected6); 
+   expect(actual7).toBe(expected7); 
+   expect(actual8).toBe(expected8); 
+   expect(actual9).toBe(expected9); 
+   expect(actual10).toBe(expected10); 
+  });
 });
