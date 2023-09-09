@@ -1,10 +1,16 @@
+const countInstances = (arr, target) => {
+
+}
+
+
+
 const inArray = (a1, a2) => {
+
     let resultArray = [];
-    a1.forEach((a1str) => { 
-        a2.forEach((a2str) => {
-            if(a2str.includes(a1str)) {
-                if(!resultArray.includes(a1str))
-                resultArray.push(a1str)
+    a1.forEach((a1Str) => { 
+        a2.forEach((a2Str) => {
+            if(a2Str.includes(a1Str)) {
+                resultArray.push(a1Str)
             }
         })
     })
@@ -14,4 +20,4 @@ const inArray = (a1, a2) => {
 }
 
 
-module.exports = { inArray }; 
+module.exports = { inArray, countInstances }; 
