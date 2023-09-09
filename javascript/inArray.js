@@ -3,6 +3,7 @@ const inArray = (a1, a2) => {
     a1.forEach((a1str) => { 
         a2.forEach((a2str) => {
             if(a2str.includes(a1str)) {
+                if(!resultArray.includes(a1str))
                 resultArray.push(a1str)
             }
         })
