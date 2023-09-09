@@ -1,7 +1,7 @@
 const {inArray} = require('../inArray');
 
-describe('Should take 2 matching single element arrays and return the single element', () => { 
-  test('', () => { 
+describe('inArray', () => { 
+  test('Should take 2 matching single element arrays and return the single element', () => { 
     //arrange 
     const expected1 = ['apple']; 
     const expected2 = ['banana']; 
