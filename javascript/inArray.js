@@ -1,5 +1,9 @@
 const countInstances = (arr, target) => {
-
+    let count = 0;
+    if(arr[0] === target) {
+        count++
+    }
+    return count;
 }
 
 
