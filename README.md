@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD to keep my problem-solving sk
 
 ## Javascript Function Descriptions:
 
+inArray: takes two arrays as arguments. Elements of the first array which are substrings of elements in the second array are returned in lexicographical order. 
+
 convertRomanNumeral: takes a Roman numeral as an argument and returns its value as a numeric decimal integer.
 
 countWhiteSpace: returns number of instances of whitespace in input 
