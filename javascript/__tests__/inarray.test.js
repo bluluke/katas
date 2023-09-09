@@ -93,4 +93,27 @@ describe('inArray', () => {
        expect(actual2).toEqual(expected2); 
        expect(actual3).toEqual(expected3); 
   });
+  test('Should return elements in lexicographical order when they are not ordered so in the input', () => { 
+    //arrange 
+    const expected1 = ['ar', 'eep', 'pple',]; 
+    const expected2 = ['anana', 'rain', 'us']; 
+    const expected3 = ['elicopter', 'lane', 'oat', 'range']; 
+
+    const input1a = ['eep', 'ar', 'pple', 'hat']; 
+    const input1b = ['car', 'apple', 'jeep']; 
+
+    const input2a = ['rain', 'us', 'anana', 'pear']; 
+    const input2b = ['banana', 'train', 'bus']; 
+
+    const input3a = ['oat', 'strawberry', 'elicopter', 'lane', 'range']; 
+    const input3b = ['helicopter', 'plane', 'boat', 'orange']; 
+    //act 
+    const actual1 = inArray(input1a, input1b); 
+    const actual2 = inArray(input2a, input2b); 
+    const actual3 = inArray(input3a, input3b); 
+    //assert 
+    expect(actual1).toEqual(expected1); 
+    expect(actual2).toEqual(expected2); 
+    expect(actual3).toEqual(expected3);
+  });
 });
