@@ -139,4 +139,27 @@ describe('inArray', () => {
     expect(actual2).toEqual(expected2); 
     expect(actual3).toEqual(expected3); 
   });
+  test('Should return all subset elements from first argument array which match other elements in first argument array', () => { 
+    //arrange 
+    const expected1 = ['ar', 'ar', 'eep', 'pple',]; 
+    const expected2 = ['anana', 'rain', 'rain', 'rain', 'us']; 
+    const expected3 = ['elicopter', 'lane', 'lane', 'oat', 'oat', 'range', 'range']; 
+
+    const input1a = ['eep', 'ar', 'pple', 'hat', 'ar']; 
+    const input1b = ['car', 'apple', 'jeep', 'bar']; 
+
+    const input2a = ['rain', 'us', 'anana', 'rain', 'pear', 'rain']; 
+    const input2b = ['banana', 'train', 'bus', 'dust']; 
+
+    const input3a = ['oat', 'strawberry', 'oat', 'elicopter', 'range', 'lane', 'range', 'lane']; 
+    const input3b = ['helicopter', 'strange', 'ranger', 'plane', 'boat', 'orange']; 
+    //act 
+    const actual1 = inArray(input1a, input1b); 
+    const actual2 = inArray(input2a, input2b); 
+    const actual3 = inArray(input3a, input3b); 
+    //assert 
+    expect(actual1).toEqual(expected1); 
+    expect(actual2).toEqual(expected2); 
+    expect(actual3).toEqual(expected3);
+  });
 });
