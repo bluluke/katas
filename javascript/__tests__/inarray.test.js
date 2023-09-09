@@ -70,7 +70,7 @@ describe('inArray', () => {
     expect(actual2).toEqual(expected2); 
     expect(actual3).toEqual(expected3); 
   }); 
-  test('Shoule not return elements from first argument array which are not substrings of any second argument array element', () => { 
+  test('Should not return elements from first argument array which are not substrings of any second argument array element', () => { 
        //arrange 
        const expected1 = ['ar', 'pple',]; 
        const expected2 = ['anana', 'rain', 'us']; 
