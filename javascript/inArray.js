@@ -1,8 +1,10 @@
 const countInstances = (arr, target) => {
     let count = 0;
-    if(arr[0] === target) {
-        count++
-    }
+    arr.forEach((el) => {
+        if(el === target) {
+            count++
+        }
+    })
     return count;
 }
 
