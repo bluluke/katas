@@ -1,13 +1,11 @@
 const countInstances = (arr, target) => {
-    let count = 0;
-    arr.forEach((el) => {
+    return arr.reduce((count, el) => {
         if(el === target) {
-            count++
+            return count + 1;
         }
-    })
-    return count;
+        return count
+    }, 0)
 }
-
 
 
 const inArray = (a1, a2) => {
