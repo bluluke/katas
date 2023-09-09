@@ -5,7 +5,7 @@ This is a repo of katas I have completed using TDD to keep my problem-solving sk
 
 ## Javascript Function Descriptions:
 
-inArray: takes two arrays as arguments. Elements of the first array which are substrings of elements in the second array are returned in lexicographical order. 
+inArray: takes two arrays as arguments. Elements of the first array which are substrings of elements in the second array are returned in lexicographical order. Uses countInstances as util function to prevent duplication of first argument elements in return values. 
 
 convertRomanNumeral: takes a Roman numeral as an argument and returns its value as a numeric decimal integer.
 
