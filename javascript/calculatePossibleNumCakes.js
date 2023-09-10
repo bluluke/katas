@@ -5,7 +5,6 @@ const calculatePossibleNumCakes = (recipe, available) => {
         maxPerIngredient.push(available[ingredient] / recipe[ingredient]);
        
     })
-
     const minNumber = Math.min(...maxPerIngredient);
     if(isNaN(minNumber)) {
         return 0;
