@@ -88,7 +88,7 @@ describe('calculatePossibleNumCakes', () => {
         expect(actual2).toBe(expected2); 
         expect(actual3).toBe(expected3); 
     });
-    test('Should return 0 when the recipe objects has a property not present in available object.', () => { 
+    test('Should return 0 when the recipe object has a property not present in available object.', () => { 
             //arrange 
         const expected = 0;
 
