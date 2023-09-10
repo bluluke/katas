@@ -88,4 +88,25 @@ describe('calculatePossibleNumCakes', () => {
         expect(actual2).toBe(expected2); 
         expect(actual3).toBe(expected3); 
     });
+    test('Should return 0 when the recipe objects has a property not present in available object.', () => { 
+            //arrange 
+        const expected = 0;
+
+        const input1a = {apples: 20000, flour: 3, eggs: 2}; 
+        const input1b = {flour: 9, eggs: 5};
+
+        const input2a = {apples: 180, pepper: 6, cinnamon: 10, sugar: 3}; 
+        const input2b = {pepper: 24, cinnamon: 32, sugar: 12};
+
+        const input3a = {lard: 50000, cinnamon: 10, sugar: 19, apples: 39, salt: 50}; 
+        const input3b = {cinnamon: 60, sugar: 95, apples: 160, salt: 500};
+        //act 
+        const actual1 = calculatePossibleNumCakes(input1a, input1b); 
+        const actual2 = calculatePossibleNumCakes(input2a, input2b); 
+        const actual3 = calculatePossibleNumCakes(input3a, input3b); 
+        //assert 
+        expect(actual1).toBe(expected); 
+        expect(actual2).toBe(expected); 
+        expect(actual3).toBe(expected); 
+    });
 });
