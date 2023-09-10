@@ -128,4 +128,24 @@ describe('calculatePossibleNumCakes', () => {
         expect(actual2).toBe(expected); 
         expect(actual3).toBe(expected); 
     });
+    test('Should return 0 when the recipe object is empty', () => { 
+        //arrange 
+    const expected = 0;
+
+    const inputa = {};
+
+    const input1b = {apples: 20000, flour: 3, eggs: 2}; 
+    const input2b = {apples: 180, pepper: 6, cinnamon: 10, sugar: 3}; 
+    const input3b = {lard: 50000, cinnamon: 10, sugar: 19, apples: 39, salt: 50}; 
+
+
+    //act 
+    const actual1 = calculatePossibleNumCakes(inputa, input1b); 
+    const actual2 = calculatePossibleNumCakes(inputa, input2b); 
+    const actual3 = calculatePossibleNumCakes(inputa, input3b); 
+    //assert 
+    expect(actual1).toBe(expected); 
+    expect(actual2).toBe(expected); 
+    expect(actual3).toBe(expected); 
+});
 });
