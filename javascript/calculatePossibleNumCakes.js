@@ -7,7 +7,7 @@ const calculatePossibleNumCakes = (recipe, available) => {
     })
 
     const minNumber = Math.min(...maxPerIngredient);
-    return minNumber;
+    return Math.floor(minNumber);
 }
 
 

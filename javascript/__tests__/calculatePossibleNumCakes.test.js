@@ -65,4 +65,27 @@ describe('calculatePossibleNumCakes', () => {
     expect(actual2).toBe(expected2); 
     expect(actual3).toBe(expected3); 
   });
+  test('Should return integer  when the recipe integer value determining the max number does not have the corresponding available value as a multiple', () => { 
+            //arrange 
+        const expected1 = 2; 
+        const expected2 = 3; 
+        const expected3 = 4; 
+
+        const input1a = {flour: 3, eggs: 2}; 
+        const input1b = {flour: 9, eggs: 5};
+
+        const input2a = {pepper: 6, cinnamon: 10, sugar: 3}; 
+        const input2b = {pepper: 24, cinnamon: 32, sugar: 12};
+
+        const input3a = {cinnamon: 10, sugar: 19, apples: 39, salt: 50}; 
+        const input3b = {cinnamon: 60, sugar: 95, apples: 160, salt: 500};
+        //act 
+        const actual1 = calculatePossibleNumCakes(input1a, input1b); 
+        const actual2 = calculatePossibleNumCakes(input2a, input2b); 
+        const actual3 = calculatePossibleNumCakes(input3a, input3b); 
+        //assert 
+        expect(actual1).toBe(expected1); 
+        expect(actual2).toBe(expected2); 
+        expect(actual3).toBe(expected3); 
+    });
 });
