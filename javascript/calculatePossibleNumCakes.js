@@ -1,7 +1,12 @@
 const calculatePossibleNumCakes = (recipe, available) => {
-    const recipeIngredient = Object.keys(recipe);
-    const maxCakes = available[recipeIngredient] / recipe[recipeIngredient];
-    return maxCakes;
+    const recipeIngredients = Object.keys(recipe);
+    let maxPerIngredient = [];
+    recipeIngredients.forEach((ingredient) => {
+        maxPerIngredient.push(available[ingredient] / recipe[ingredient]);
+       
+    })
+
+    return maxPerIngredient[0]
 }
 
 
