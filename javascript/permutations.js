@@ -8,7 +8,7 @@ const permutations = (inputStr) => {
         } 
     })
     if(allSame) {
-        return inputStr;
+        return [inputStr];
     }
 }
 

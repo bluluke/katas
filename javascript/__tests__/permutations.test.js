@@ -4,9 +4,9 @@ const { permutations } = require('../permutations');
 describe.only('permutations', () => { 
   test('Should return string input with length of 1 unchanged', () => { 
      //arrange 
-        const expected1 = 'a'; 
-        const expected2 = 'b'; 
-        const expected3 = 'c'; 
+        const expected1 = ['a']; 
+        const expected2 = ['b']; 
+        const expected3 =['c']; 
     
         const input1 = 'a'; 
         const input2 = 'b'; 
@@ -22,9 +22,9 @@ describe.only('permutations', () => {
   }); 
     test('Should return string input unchanged if all characters are the same', () => { 
         //arrange 
-        const expected1 = 'aaa'; 
-        const expected2 = 'bbbb'; 
-        const expected3 = 'ccccc'; 
+        const expected1 = ['aaa']; 
+        const expected2 = ['bbbb']; 
+        const expected3 = ['ccccc']; 
     
         const input1 = 'aaa'; 
         const input2 = 'bbbb'; 
