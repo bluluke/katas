@@ -1,5 +1,13 @@
 const permutations = (inputStr) => {
-    if(inputStr.length === 1) {
+    const arrayedInput = inputStr.split('');
+    const arrayedInputFirstEl = arrayedInput[0];
+    let allSame = true;
+    arrayedInput.forEach((el) => {
+        if(el !== arrayedInputFirstEl) {
+            allSame = false; 
+        } 
+    })
+    if(allSame) {
         return inputStr;
     }
 }
