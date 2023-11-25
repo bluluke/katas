@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD to keep my problem-solving sk
 
 ## Javascript Function Descriptions:
 
+generateHashtag: return a hashtag from input string.
+
 permutations: return all possible permutations of characters from input string. 
 
 calculatePossibleNumCakes: takes 2 object arguments. The first argument is a recipe with properties of ingredients and integer values representing amounts required. The second argument is an object with properties of ingredients and integer values representing amounts available. An integer is returned which is equal to the  maximum number of cakes that can be made to the recipe ingredients of the first argument from the ingredients available of the second argument.
