@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD to keep my problem-solving sk
 
 ## Javascript Function Descriptions:
 
+sumPairs: returns first 2 integers from input array which are equal to input sum. 
+
 generateHashtag: return a hashtag from input string.
 
 permutations: return all possible permutations of characters from input string. 
