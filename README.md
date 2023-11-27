@@ -1,16 +1,17 @@
 # Katas
-This is a repo of katas I have completed using TDD to keep my problem-solving skills sharp. 
+This is a repo of katas I have completed using TDD (unless stated otherwise) to keep my problem-solving skills sharp. 
 
 
 
 ## Javascript Function Descriptions:
 
-scrambled: checks if all characters in the second argument are present in the first argument. 
-listSqaured: finds integers between 1st and 2nd argument where the sum of their squared divisors is itself a square. 
+scrambled: checks if all characters in the second argument are present in the first argument (not built with TDD). 
 
-sumPairs: returns first 2 integers from input array which are equal to input sum. 
+listSqaured: finds integers between 1st and 2nd argument where the sum of their squared divisors is itself a square (not built with TDD). 
 
-generateHashtag: return a hashtag from input string.
+sumPairs: returns first 2 integers from input array which are equal to input sum (not built with TDD). 
+
+generateHashtag: return a hashtag from input string (not built with TDD).
 
 permutations: return all possible permutations of characters from input string. 
 
