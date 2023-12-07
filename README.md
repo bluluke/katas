@@ -42,3 +42,9 @@ isArmstrongNum returns true if input is an Armstrong number and false if it is n
 maskify: returns input with all but last 4 characters replaced with #.
 
 sumOf2LowestPosInts: returns the sum of the two lowest positive integers from input array,
+
+
+
+## Java Kata Descriptions:
+
+EndsWith: checks if first argument string ends with 2nd argument string (not built with TDD). 
