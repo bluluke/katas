@@ -47,6 +47,8 @@ sumOf2LowestPosInts: returns the sum of the two lowest positive integers from in
 
 ## Java Kata Descriptions:
 
+ReverseString: reverses string argument. 
+
 EndsWith: checks if first argument string ends with 2nd argument string (not built with TDD). 
 
 SpinWords: reverses words in input string which have a length of 5 or more. 
