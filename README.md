@@ -47,6 +47,8 @@ sumOf2LowestPosInts: returns the sum of the two lowest positive integers from in
 
 ## Java Kata Descriptions:
 
+SumArray: sums all integers in input array. 
+
 ReverseString: reverses string argument. 
 
 EndsWith: checks if first argument string ends with 2nd argument string (not built with TDD). 
