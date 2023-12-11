@@ -47,6 +47,8 @@ sumOf2LowestPosInts: returns the sum of the two lowest positive integers from in
 
 ## Java Kata Descriptions:
 
+FakeBinary: returns string of fake binary code from input of string containing digits. An input character of 4 or below results in a 0, otherwise a 1 is produced.
+
 SumArray: sums all integers in input array. 
 
 ReverseString: reverses string argument. 
