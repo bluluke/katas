@@ -47,6 +47,7 @@ sumOf2LowestPosInts: returns the sum of the two lowest positive integers from in
 
 ## Java Kata Descriptions:
 
+StringToNumber: converts string digit to an integer type. 
 EnoughFuel: calculates if there is enough fuel when a gallon lasts 25 miles.
 
 FakeBinary: returns string of fake binary code from input of string containing digits. An input character of 4 or below results in a 0, otherwise a 1 is produced.
