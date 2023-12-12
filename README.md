@@ -47,6 +47,8 @@ sumOf2LowestPosInts: returns the sum of the two lowest positive integers from in
 
 ## Java Kata Descriptions:
 
+Maps: doubles every integer in an array.
+
 StringToNumber: converts string digit to an integer type. 
 EnoughFuel: calculates if there is enough fuel when a gallon lasts 25 miles.
 
