@@ -46,6 +46,18 @@ describe('isPangram', () => {
         expect(actual1).toBe(expected)
         expect(actual2).toBe(expected)
     })
+    test('Should return true from an input of complete pangram including whitespaces ', () => {
+        //arrange
+        const expected = true;
+        const input1 = 'ab  cdefghi  jklmnop  qrstuv  wxy z';
+        const input2 = 'ABCDEF  GHIJ   KLMN   OPQR  STU  VWX  YZ';
+        //act
+        const actual1 = isPangram(input1)
+        const actual2 = isPangram(input2)
+        //assert
+        expect(actual1).toBe(expected)
+        expect(actual2).toBe(expected)
+    })
 })
 
 describe('makeUppercase', () => {
