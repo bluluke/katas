@@ -1,4 +1,4 @@
-const {isPangram }= require("../isPangram");
+const {isPangram, makeUppercase }= require("../isPangram");
 
 describe('isPangram', () => {
     test('Should return false from input of empty string', () => {
@@ -10,6 +10,10 @@ describe('isPangram', () => {
         //assert
         expect(actual).toBe(expected);
     })
+})
+
+describe('makeUppercase', () => {
+   
 })
 
 

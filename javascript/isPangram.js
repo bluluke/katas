@@ -1,3 +1,7 @@
+const makeUppercase = () => {
+    
+}
+
 const isPangram = (str) => {
     if(!str) {
         return false;
@@ -6,4 +10,4 @@ const isPangram = (str) => {
 
 
 
-module.exports = {isPangram};
+module.exports = { makeUppercase, isPangram};
