@@ -22,6 +22,18 @@ describe('isPangram', () => {
         expect(actual1).toBe(expected)
         expect(actual2).toBe(expected)
     })
+    test('Should return true from an input that has non letter characters', () => {
+          //arrange
+          const expected = true;
+          const input1 = 'abc&$%$&&defgh&%$&$%&ijklmnopqrstuvwxyz';
+          const input2 = 'ABCDE*()*&@£FGHIJKLMNOPQR&%$&$&%STU&%$&%$VWXYZ';
+          //act
+          const actual1 = isPangram(input1)
+          const actual2 = isPangram(input2)
+          //assert
+          expect(actual1).toBe(expected)
+          expect(actual2).toBe(expected)
+    })
 })
 
 describe('makeUppercase', () => {

@@ -50,8 +50,7 @@ const isPangram = (str) => {
             hasAllOfAlphabet = false;
         }
     }
-    return hasAllOfAlphabet;
-    
+    return hasAllOfAlphabet; 
 }
 
 
