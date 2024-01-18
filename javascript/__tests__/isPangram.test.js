@@ -9,6 +9,18 @@ describe('isPangram', () => {
         const actual = isPangram(input);
         //assert
         expect(actual).toBe(expected);
+    });
+    test('Should return true from an input of the alphabet', () => {
+        //arrange
+        const expected = true;
+        const input1 = 'abcdefghijklmnopqrstuvwxyz';
+        const input2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        //act
+        const actual1 = isPangram(input1)
+        const actual2 = isPangram(input2)
+        //assert
+        expect(actual1).toBe(expected)
+        expect(actual2).toBe(expected)
     })
 })
 
