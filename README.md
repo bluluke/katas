@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD (unless stated otherwise) to 
 
 ## Javascript Function Descriptions:
 
+isPangram: checks if input of string is a pangram.
+
 scrambled: checks if all characters in the second argument are present in the first argument (not built with TDD). 
 
 listSqaured: finds integers between 1st and 2nd argument where the sum of their squared divisors is itself a square (not built with TDD). 
