@@ -13,7 +13,24 @@ describe('isPangram', () => {
 })
 
 describe('makeUppercase', () => {
-   
+    test('Should return string input with all lowercase characters converted to uppercase', () => {
+        //arrange 
+        const expected1 = 'ABCDE123FG';
+        const expected2 = 'CAKECAKE999CAKE';
+        const expected3 = 'CATS!@£$%^?DOGS';
+
+        const input1 = 'abcDE123fg';
+        const input2 = 'CAKEcake999caKE';
+        const input3 = 'caTs!@£$%^?Dogs';
+        //arrange
+        const actual1 = makeUppercase(input1);
+        const actual2 = makeUppercase(input2);
+        const actual3 = makeUppercase(input3);
+        //act        
+        expect(actual1).toBe(expected1)
+        expect(actual2).toBe(expected2)
+        expect(actual3).toBe(expected3)
+    })
 })
 
 

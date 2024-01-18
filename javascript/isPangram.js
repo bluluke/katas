@@ -1,5 +1,5 @@
-const makeUppercase = () => {
-    
+const makeUppercase = (str) => {
+    return str.toUpperCase();
 }
 
 const isPangram = (str) => {
