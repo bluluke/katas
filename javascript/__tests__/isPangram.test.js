@@ -34,6 +34,18 @@ describe('isPangram', () => {
           expect(actual1).toBe(expected)
           expect(actual2).toBe(expected)
     })
+    test('Should return true from an input of a complete pangram including extra instances of some letters', () => {
+        //arrange
+        const expected = true;
+        const input1 = 'abacfffdehfghgkmhiuujvvkrlfmrngoHHpDFWWqrstRGEXCVDuvwxyz';
+        const input2 = 'ABCDAAGGKKRRRLLTaajddjeoeoggnbjtpppPPrKKFEFGHIJKLMNOPQRSTUVWXYZ';
+        //act
+        const actual1 = isPangram(input1)
+        const actual2 = isPangram(input2)
+        //assert
+        expect(actual1).toBe(expected)
+        expect(actual2).toBe(expected)
+    })
 })
 
 describe('makeUppercase', () => {
