@@ -58,6 +58,22 @@ describe('isPangram', () => {
         expect(actual1).toBe(expected)
         expect(actual2).toBe(expected)
     })
+    test('Should return false from input of non pangram', () => {
+        //arrange
+        const expected = false;
+        const input1 = 'askjhbf784bfkhf KGKG'; 
+        const input2 = '94858 GKGK eocjn rjvbn';
+        const input3 = 'fkaieuyrFKKGJG tiiFKFKF86994847';
+        
+        //act
+        const actual1 = isPangram(input1);
+        const actual2 = isPangram(input2);
+        const actual3 = isPangram(input3);
+        //assert
+        expect(actual1).toBe(false);
+        expect(actual2).toBe(false);
+        expect(actual3).toBe(false);
+    })
 })
 
 describe('makeUppercase', () => {
