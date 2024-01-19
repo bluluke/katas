@@ -45,5 +45,22 @@ describe('isAFriend', () => {
         expect(actual1).toEqual(expected1);
         expect(actual2).toEqual(expected2);
         expect(actual3).toEqual(expected3);
+    });
+    test('Should return empty array from input of array containg single string with length other than 4', () => {
+        //arrange
+        const expected = [];
+
+        const input1 = ['Sarah'];
+        const input2 = ['Hal', 'Patrick'];
+        const input3 = ['Clarissa', 'Francesca', 'Salvatore'];
+        //act
+        const actual1 = isAFriend(input1);
+        const actual2 = isAFriend(input2);
+        const actual3 = isAFriend(input3);
+
+        //assert
+        expect(actual1).toEqual(expected);
+        expect(actual2).toEqual(expected);
+        expect(actual3).toEqual(expected);
     })
 })

@@ -1,6 +1,6 @@
 const isAFriend = (names) => {
     let arrayOfFriends =  names.map((name) => {
-        if(name) {
+        if(name && name.length === 4) {
             return name;
         }
     })
