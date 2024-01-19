@@ -27,5 +27,23 @@ describe('isAFriend', () => {
         expect(actual1).toEqual(expected1);
         expect(actual2).toEqual(expected2);
         expect(actual3).toEqual(expected3);
+    });
+    test('Should return multiple names in array from input of array containing multiple 4 letter strings', () => {
+        //arrange
+        const expected1 = ['Jack', 'Tara', 'Lola'];
+        const expected2 = ['Tara', 'Jack', 'Lola', 'John'];
+        const expected3 = ['Lola', 'John', 'Rino', 'Tina', 'Kate'];
+
+        const input1 = ['Jack', 'Tara', 'Lola'];
+        const input2 = ['Tara', 'Jack', 'Lola', 'John'];
+        const input3 = ['Lola', 'John', 'Rino', 'Tina', 'Kate'];
+        //act
+        const actual1 = isAFriend(input1);
+        const actual2 = isAFriend(input2);
+        const actual3 = isAFriend(input3);
+        //assert
+        expect(actual1).toEqual(expected1);
+        expect(actual2).toEqual(expected2);
+        expect(actual3).toEqual(expected3);
     })
 })
