@@ -1,7 +1,8 @@
 const isAFriend = (names) => {
-    let arrayOfFriends =  names.map((name) => {
+    let arrayOfFriends =  [];
+    names.forEach((name) => {
         if(name && name.length === 4) {
-            return name;
+            arrayOfFriends.push(name);
         }
     })
     return arrayOfFriends;

@@ -62,5 +62,23 @@ describe('isAFriend', () => {
         expect(actual1).toEqual(expected);
         expect(actual2).toEqual(expected);
         expect(actual3).toEqual(expected);
+    });
+    test('Should return array of names with length of 4 letters from input of array containing some 4 letter names and some non 4 letter names', () => {
+        //arrange
+        const expected1 = ['Fran', 'Carl'];
+        const expected2 = ['Jack', 'Lola', 'Greg'];
+        const expected3 = ['Tina', 'Jill', 'Luke'];
+
+        const input1 = ['Helen', 'Fran', 'Carl', 'Lorenzo'];
+        const input2 = ['Jack', 'Gloria', 'Lola', 'Beatrice', 'Greg', 'Casandra'];
+        const input3 = ['Tina', 'Nicole', 'Jemma', 'Caitlin', 'Jessica', 'Jill', 'Luke'];
+        //act
+        const actual1 = isAFriend(input1);
+        const actual2 = isAFriend(input2);
+        const actual3 = isAFriend(input3);
+        //assert
+        expect(actual1).toEqual(expected1);
+        expect(actual2).toEqual(expected2);
+        expect(actual3).toEqual(expected3);
     })
 })
