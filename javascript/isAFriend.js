@@ -1,7 +1,9 @@
 const isAFriend = (names) => {
     let arrayOfFriends =  [];
     names.forEach((name) => {
-        if(name && name.length === 4) {
+        const letterRegex = /^[a-zA-Z]+$/; 
+        if(name && name.length === 4 && letterRegex.test(name)) {
+
             arrayOfFriends.push(name);
         }
     })

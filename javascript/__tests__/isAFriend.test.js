@@ -80,5 +80,24 @@ describe('isAFriend', () => {
         expect(actual1).toEqual(expected1);
         expect(actual2).toEqual(expected2);
         expect(actual3).toEqual(expected3);
+    });
+    test('Should not return names with non alphabet characters', () => {
+        //  arrange 
+        const expected1 = ['Jack']; 
+        const expected2 = ['Carl', 'Fred']; 
+        const expected3 = ['Tara']; 
+
+        const input1 = ['Jack', 'fr45', 'Fre%']; 
+        const input2 = ['Carl', '(FrD', 'Fred', '89GFg']; 
+        const input3 = ['Deborah', 'Vittoria', 'Tara', 'g.5j']; 
+
+        //act 
+        const actual1 = isAFriend(input1); 
+        const actual2 = isAFriend(input2); 
+        const actual3 = isAFriend(input3); 
+        //assert 
+        expect(actual1).toEqual(expected1); 
+        expect(actual2).toEqual(expected2); 
+        expect(actual3).toEqual(expected3); 
     })
 })
