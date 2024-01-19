@@ -1,5 +1,10 @@
-const isAFriend = (name) => {
-
+const isAFriend = (names) => {
+    let arrayOfFriends =  names.map((name) => {
+        if(name) {
+            return name;
+        }
+    })
+    return arrayOfFriends;
 }
 
 
