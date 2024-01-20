@@ -1,8 +1,8 @@
-const numOfYears = (startPopulation, increasePercentage, numComingOrGoing, targetPopulationNum) => {
+const numOfYears = (startPopulationNum, percentageOfChange, numComingOrGoing, targetPopulationNum) => {
     let numOfYearsItTakes = 0;
-    if(startPopulation < targetPopulationNum && increasePercentage <= 0 && numComingOrGoing <= 0 || startPopulation > targetPopulationNum && increasePercentage >= 0 && numComingOrGoing >= 0)  {
+    if(startPopulationNum < targetPopulationNum && percentageOfChange <= 0 && numComingOrGoing <= 0 || startPopulationNum > targetPopulationNum && percentageOfChange >= 0 && numComingOrGoing >= 0)  {
         return 'Please enter valid inputs';
-    }
+    } 
 
     if(startPopulation >= targetPopulationNum) {
         return numOfYearsItTakes;
