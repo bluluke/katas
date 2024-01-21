@@ -4,7 +4,7 @@ const numOfYears = (startPopulationNum, percentageOfChange, numComingOrGoing, ta
         return 'Please enter valid inputs';
     } 
 
-    if(startPopulation >= targetPopulationNum) {
+    if(startPopulationNum >= targetPopulationNum) {
         return numOfYearsItTakes;
     }
 }
