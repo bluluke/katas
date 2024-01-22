@@ -5,6 +5,8 @@ This is a repo of katas I have completed using TDD (unless stated otherwise) to 
 
 ## Javascript Function Descriptions:
 
+evenOrOdd: returns "Even" or "Odd depending on whether input integer is even or odd. 
+
 isAFriend: takes input of array of strings and returns strings made up of only letters and with a length of 4. 
 
 isPangram: checks if input of string is a pangram.
