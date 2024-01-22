@@ -1,5 +1,5 @@
 const evenOrOdd = (intArg) => {
-    if(intArg === 0) {
+    if(intArg % 2 === 0) {
         return 'Even';
     }
 }

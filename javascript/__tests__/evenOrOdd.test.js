@@ -9,5 +9,23 @@ describe('evenOrOdd', () => {
         const actual = evenOrOdd(input);
         //assert
         expect(actual).toBe(expected);
+    });
+    test('Should return the string "Even" from input of any even integer', () => {
+        //assert
+        const expected = 'Even';
+
+        const input1 = 2;
+        const input2 = 100;
+        const input3 = 1046;
+
+        //act
+        const actual1 = evenOrOdd(input1);
+        const actual2 = evenOrOdd(input2);
+        const actual3 = evenOrOdd(input3);
+
+        //assert
+        expect(actual1).toBe(expected);
+        expect(actual2).toBe(expected);
+        expect(actual3).toBe(expected);
     })
 }); 
