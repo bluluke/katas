@@ -27,5 +27,23 @@ describe('evenOrOdd', () => {
         expect(actual1).toBe(expected);
         expect(actual2).toBe(expected);
         expect(actual3).toBe(expected);
+    });
+    test('Should return string "Odd" from input of odd integer', () => {
+        //arrange
+        const expected = 'Odd';
+        
+        const input1 = 99;
+        const input2 = 57;
+        const input3 = 10035;
+
+        //act
+        const actual1 = evenOrOdd(input1);
+        const actual2 = evenOrOdd(input2);
+        const actual3 = evenOrOdd(input3);
+
+        //assert
+        expect(actual1).toBe(expected);
+        expect(actual2).toBe(expected);
+        expect(actual3).toBe(expected);
     })
 }); 
