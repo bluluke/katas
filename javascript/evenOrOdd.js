@@ -1,5 +1,7 @@
-const evenOrOdd = () => {
-
+const evenOrOdd = (intArg) => {
+    if(intArg === 0) {
+        return 'Even';
+    }
 }
 
 
