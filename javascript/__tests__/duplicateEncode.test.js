@@ -95,5 +95,25 @@ describe('duplicateEncode', () => {
         expect(actual3).toBe(expected3);
         expect(actual4).toBe(expected4);
         expect(actual5).toBe(expected5);
+    });
+    test('Should return closing parentheses for string input containing matching letters which have different cases', () => {
+        //arrange
+        const expected1 = '))(())))';
+        const expected2 = ')())(()(';
+        const expected3 = '()(()(()))';
+
+        const input1 = 'aAbcdD%%';
+        const input2 = 'poPljkL3';
+        const input3 = 'TdfgDr3ddD';
+
+        //act
+        const actual1 = duplicateEncode(input1);
+        const actual2 = duplicateEncode(input2);
+        const actual3 = duplicateEncode(input3);
+
+        //assert
+        expect(actual1).toBe(expected1);
+        expect(actual2).toBe(expected2);
+        expect(actual3).toBe(expected3);
     })
 });

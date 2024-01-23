@@ -5,18 +5,20 @@ const duplicateEncode = (word) => {
 
     let refObj = {}; 
 
-    const arrayWord = word.split('');
+    const arrayWordUppercase = word.split('').map(char => char.toUpperCase());
+    
+
     let encodedWord = '';
-    for(let i = 0; i < arrayWord.length; i++) {
-        if(!refObj.hasOwnProperty(arrayWord[i])) {
-            refObj[arrayWord[i]] = 1;
+    for(let i = 0; i < arrayWordUppercase.length; i++) {
+        if(!refObj.hasOwnProperty(arrayWordUppercase[i])) {
+            refObj[arrayWordUppercase[i]] = 1;
         } else {
-            refObj[arrayWord[i]]++;
+            refObj[arrayWordUppercase[i]]++;
         }
     }
     
-    for(let i = 0; i < arrayWord.length; i++) {
-        if(refObj[arrayWord[i]] > 1) {
+    for(let i = 0; i < arrayWordUppercase.length; i++) {
+        if(refObj[arrayWordUppercase[i]] > 1) {
             encodedWord += ')';
         } else {
             encodedWord += '(';
