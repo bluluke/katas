@@ -30,7 +30,7 @@ describe('duplicateEncode', () => {
         expect(actual2).toBe(expected);
         expect(actual3).toBe(expected);
     });
-    test('Should return a string of multiple starting parenthesis equal in length to an input string containing only unique characters', () => {
+    test('Should return a string of multiple starting parentheses equal in length to an input string containing only unique characters', () => {
         //arrange
         const expected1 = '(((';
         const expected2 = '(((((';
@@ -49,5 +49,5 @@ describe('duplicateEncode', () => {
         expect(actual1).toBe(expected1);
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
-    })
+    });
 });
