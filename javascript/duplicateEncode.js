@@ -1,5 +1,7 @@
 const duplicateEncode = (word) => {
-    
+    if(word === '') {
+        return '';
+    }
 }
 
 
