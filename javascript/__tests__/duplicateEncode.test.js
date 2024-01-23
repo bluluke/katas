@@ -50,4 +50,22 @@ describe('duplicateEncode', () => {
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
     });
+    test('Should return 2 ending parentheses from string input of 2 matching characters', () => {
+        //arrange
+        const expected = '))';
+        
+        const input1 = 'aa';
+        const input2 = '55';
+        const input3 = '**';
+
+        //act
+        const actual1 = duplicateEncode(input1)
+        const actual2 = duplicateEncode(input2)
+        const actual3 = duplicateEncode(input3)
+
+        //assert
+        expect(actual1).toBe(expected);
+        expect(actual2).toBe(expected);
+        expect(actual3).toBe(expected);
+    })
 });
