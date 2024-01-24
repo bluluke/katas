@@ -70,4 +70,28 @@ describe('getSum', () => {
               expect(actual2).toBe(expected2);
               expect(actual3).toBe(expected3);
     });
+        test('Should return sum of input ints and int values between input ints when absolute difference between input ints equal to 3 or more', () => {
+            //arrange
+        const expected1 = 55;
+        const expected2 = -380;
+        const expected3 = 6057;
+
+        const input1A = 1;
+        const input1B = 10;
+        const input2A = -44;
+        const input2B = -51;
+        const input3A = 1007;
+        const input3B = 1012;
+
+        //act
+        const actual1 = getSum(input1A, input1B);
+        const actual2 = getSum(input2A, input2B);
+        const actual3 = getSum(input3A, input3B);
+
+        //assert
+        expect(actual1).toBe(expected1);
+        expect(actual2).toBe(expected2);
+        expect(actual3).toBe(expected3);
+
+    })
 })
