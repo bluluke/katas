@@ -92,6 +92,29 @@ describe('getSum', () => {
         expect(actual1).toBe(expected1);
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
+    });
+        test('Should return sum when input ints have values in descending order', () => {
+        //arrange
+        const expected1 = 55;
+        const expected2 = -380;
+        const expected3 = 6057;
 
-    })
+        const input1A = 10;
+        const input1B = 1;
+        const input2A = -51;
+        const input2B = -44;
+        const input3A = 1012;
+        const input3B = 1007;
+
+        //act
+        const actual1 = getSum(input1A, input1B);
+        const actual2 = getSum(input2A, input2B);
+        const actual3 = getSum(input3A, input3B);
+
+        //assert
+        expect(actual1).toBe(expected1);
+        expect(actual2).toBe(expected2);
+        expect(actual3).toBe(expected3);
+
+    });
 })
