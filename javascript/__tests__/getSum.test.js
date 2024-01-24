@@ -46,5 +46,28 @@ describe('getSum', () => {
         expect(actual1).toBe(expected1);
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
-    })
+    });
+    test('Should return int sum of input ints + int value between input ints when the absolute difference between inputs ints equal to 2', () => {
+              //arrange
+              const expected1 = 27;
+              const expected2 = -261;
+              const expected3 = 9030;
+      
+              const input1A = 8;
+              const input1B = 10;
+              const input2A = -88;
+              const input2B = -86;
+              const input3A = 3009;
+              const input3B = 3011;
+      
+              //act
+              const actual1 = getSum(input1A, input1B);
+              const actual2 = getSum(input2A, input2B);
+              const actual3 = getSum(input3A, input3B);
+      
+              //assert
+              expect(actual1).toBe(expected1);
+              expect(actual2).toBe(expected2);
+              expect(actual3).toBe(expected3);
+    });
 })
