@@ -36,5 +36,28 @@ describe('longest', () => {
           expect(actual1).toBe(expected1);
           expect(actual2).toBe(expected2);
           expect(actual3).toBe(expected3);
+    });
+    test('Should return 2 character string equal to concatenation of 2 input single character strings', () => {
+         //arrange
+         const expected1 = 'ab';
+         const expected2 = 'cd';
+         const expected3 = 'ef';
+
+         const input1A = 'a';
+         const input1B = 'b';
+         const input2A = 'c';
+         const input2B = 'd';
+         const input3A = 'e';
+         const input3B = 'f';
+ 
+         //act
+         const actual1 = longest(input1A, input1B);
+         const actual2 = longest(input2A, input2B);
+         const actual3 = longest(input3A, input3B);
+ 
+         //assert
+         expect(actual1).toBe(expected1);
+         expect(actual2).toBe(expected2);
+         expect(actual3).toBe(expected3);
     }) 
 })
