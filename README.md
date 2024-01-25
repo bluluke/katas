@@ -4,6 +4,7 @@ This is a repo of katas I have completed using TDD (unless stated otherwise) to 
 
 
 ## Javascript Function Descriptions:
+getSum: returns total of 2 integer inputs in addition to all integer values between the 2 integer inputs.
 
 evenOrOdd: returns "Even" or "Odd depending on whether input integer is even or odd. 
 
