@@ -129,4 +129,27 @@ describe('longest', () => {
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
   }); 
+  test('Should return all characters in lowercase from input strings which include uppercase letters', () => {
+        //arrange
+        const expected1 = 'abcdef';
+        const expected2 = 'ghijklmno';
+        const expected3 = 'pqrstuvwxy';
+
+        const input1A = 'BbbEf';
+        const input1B = 'cCcAdddc';
+        const input2A = 'KllllMnon';
+        const input2B = 'GihJjij';
+        const input3A = 'SqvVvpxyx';
+        const input3B = 'WrUrwt';
+
+        //act
+        const actual1 = longest(input1A, input1B);
+        const actual2 = longest(input2A, input2B);
+        const actual3 = longest(input3A, input3B);
+
+        //assert
+        expect(actual1).toBe(expected1);
+        expect(actual2).toBe(expected2);
+        expect(actual3).toBe(expected3);
+  })
 })

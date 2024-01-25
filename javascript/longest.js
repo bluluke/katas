@@ -7,7 +7,7 @@ const longest = (str1, str2) => {
     let refObj = {};
     let sortedUniqueCharcterString = ''; 
 
-    const characterArray = str1.split('').concat(str2.split('')).sort();
+    const characterArray = str1.toLowerCase().split('').concat(str2.toLowerCase().split('')).sort();
 
     for(const char of characterArray) {
         if(!refObj.hasOwnProperty(char)) {
