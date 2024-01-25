@@ -13,5 +13,28 @@ describe('longest', () => {
 
         //assert
         expect(actual).toBe(expected);
+    });
+    test('Should return single character string from input of 1 emty string and 1 single character string', () => {
+          //arrange
+          const expected1 = 'a';
+          const expected2 = 'b';
+          const expected3 = 'c';
+
+          const input1A = 'a';
+          const input1B = '';
+          const input2A = 'b';
+          const input2B = '';
+          const input3A = 'c';
+          const input3B = '';
+  
+          //act
+          const actual1 = longest(input1A, input1B);
+          const actual2 = longest(input2A, input2B);
+          const actual3 = longest(input3A, input3B);
+  
+          //assert
+          expect(actual1).toBe(expected1);
+          expect(actual2).toBe(expected2);
+          expect(actual3).toBe(expected3);
     }) 
 })
