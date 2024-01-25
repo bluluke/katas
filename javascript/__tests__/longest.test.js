@@ -175,5 +175,4 @@ describe('longest', () => {
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
     });
-
 })
