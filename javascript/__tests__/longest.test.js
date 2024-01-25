@@ -82,5 +82,28 @@ describe('longest', () => {
         expect(actual1).toBe(expected1);
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
+    });
+    test('Should return all unique characters from both input string in alphabetical order', () => {
+          //arrange
+          const expected1 = 'abcdef';
+          const expected2 = 'ghijklmno';
+          const expected3 = 'pqrstuvwxy';
+  
+          const input1A = 'bef';
+          const input1B = 'adc';
+          const input2A = 'klmno';
+          const input2B = 'ghij';
+          const input3A = 'sqvpxy';
+          const input3B = 'wurt';
+  
+          //act
+          const actual1 = longest(input1A, input1B);
+          const actual2 = longest(input2A, input2B);
+          const actual3 = longest(input3A, input3B);
+  
+          //assert
+          expect(actual1).toBe(expected1);
+          expect(actual2).toBe(expected2);
+          expect(actual3).toBe(expected3);
     }) 
 })
