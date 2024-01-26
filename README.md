@@ -4,6 +4,8 @@ This is a repo of katas I have completed using TDD (unless stated otherwise) to 
 
 
 ## Javascript Function Descriptions:
+longest: from an input of 2 strings, returns string containing one instance of each letter present in either of the 2 string inputs in alphabetical order and lowercase.
+
 getSum: returns total of 2 integer inputs in addition to all integer values between the 2 integer inputs.
 
 evenOrOdd: returns "Even" or "Odd depending on whether input integer is even or odd. 
