@@ -56,6 +56,8 @@ sumOf2LowestPosInts: returns the sum of the two lowest positive integers from in
 
 digitize: takes int input and returns array containing individual digits of int input in reverse order.
 
+boolean_to_string: takes boolean input and returns boolean value as a string.
+
 ## Java Kata Descriptions:
 
 Maps: doubles every integer in an array.
