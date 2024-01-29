@@ -52,7 +52,9 @@ maskify: returns input with all but last 4 characters replaced with #.
 
 sumOf2LowestPosInts: returns the sum of the two lowest positive integers from input array,
 
+## Python Kata Descriptions
 
+digitize: takes int input and returns array containing individual digits of int input in reverse order.
 
 ## Java Kata Descriptions:
 
