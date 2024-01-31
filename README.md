@@ -60,6 +60,8 @@ boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
 
+BinaryAddition: returns sum of two input integers as a binary string. 
+
 Maps: doubles every integer in an array.
 
 StringToNumber: converts string digit to an integer type. 
