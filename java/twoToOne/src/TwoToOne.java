@@ -9,6 +9,7 @@ public class TwoToOne {
         String combined = a + b;
 
         String result = combined.chars()
+            .distinct()
             .mapToObj(c -> String.valueOf((char) c))
             .collect(Collectors.joining());
         return result;
@@ -17,7 +18,7 @@ public class TwoToOne {
     public static void main(String[] args) {
 
         TwoToOne twoToOne = new TwoToOne(); 
-
+        
         String s1 = "xyaabbbccccdefww";
         String s2 = "xxxxyyyyabklmopq";
         String result = twoToOne.twoToOne(s1, s2);
