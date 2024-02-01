@@ -10,6 +10,7 @@ public class TwoToOne {
 
         String result = combined.chars()
             .distinct()
+            .sorted()
             .mapToObj(c -> String.valueOf((char) c))
             .collect(Collectors.joining());
         return result;
