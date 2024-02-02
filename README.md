@@ -59,6 +59,7 @@ digitize: takes int input and returns array containing individual digits of int 
 boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
+TriangleTester: Returns true if 3 input integers pass triangle inequality theorem and false if they do not pass it. 
 
 TwoToOne: returns sorted String of unique characters from input of 2 strings. 
 
