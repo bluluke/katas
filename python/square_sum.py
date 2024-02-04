@@ -1,4 +1,5 @@
-def square_sum():
-    print("Hello square_num")
+def square_sum(numbers):
+    print(numbers)
 
-square_sum()
+
+square_sum([1, 2, 2])
