@@ -54,6 +54,8 @@ sumOf2LowestPosInts: returns the sum of the two lowest positive integers from in
 
 ## Python Kata Descriptions
 
+square_sum: squares each integer element from input array and returns the sum of them.  
+
 digitize: takes int input and returns array containing individual digits of int input in reverse order.
 
 boolean_to_string: takes boolean input and returns boolean value as a string.
