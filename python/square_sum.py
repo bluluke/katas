@@ -1,6 +1,8 @@
 def square_sum(numbers):
+    total = 0
     for num in numbers:
-        print(num)
+        total += num
+    print(total)
 
 
 
