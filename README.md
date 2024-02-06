@@ -61,6 +61,9 @@ digitize: takes int input and returns array containing individual digits of int 
 boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
+
+XO: Returns true or false if number of x characters and y characters in input string are equal.
+
 NumOfMultiples: Returns List of integers corresponding to input integer representing common factor and input integer representing number of multiples.
 TriangleTester: Returns true if 3 input integers pass triangle inequality theorem and false if they do not pass it. 
 
