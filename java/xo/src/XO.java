@@ -1,7 +1,7 @@
 public class XO {
     public static boolean getXO (String str) {
     
-        char[] arrayOfXOs = str.toCharArray();
+        char[] arrayOfXOs = str.toLowerCase().toCharArray();
         int xCount = 0;
         int oCount = 0; 
 
@@ -18,5 +18,6 @@ public class XO {
       public static void main(String[] args) {
         System.out.println(getXO("xoxooxx"));
         System.out.println(getXO("xoxoox"));
+        System.out.println(getXO("Xoxoox"));
       }
 }
