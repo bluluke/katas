@@ -62,6 +62,8 @@ boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
 
+FilterList: takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
 XO: Returns true or false if number of x characters and y characters in input string are equal.
 
 NumOfMultiples: Returns List of integers corresponding to input integer representing common factor and input integer representing number of multiples.
