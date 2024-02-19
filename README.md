@@ -62,6 +62,8 @@ boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
 
+findComplementaryStrand: this function takes a DNA strand as input and returns its complementary strand, where symbols 'A' and 'T' are complements of each other, as well as 'C' and 'G'. 
+
 descendingOrder: returns the input int digits in descending order. 
 
 FilterList: takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
