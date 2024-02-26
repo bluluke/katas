@@ -14,6 +14,11 @@ public class Banjo {
         String result = aBanjo.areYouPlayingBanjo("Jack");
         System.out.println(result);
 
+        Banjo anotherBanjo = new Banjo();
+        String result2 = anotherBanjo.areYouPlayingBanjo("Ryan");
+        System.out.println(result2);
+
+
     }
     
 }
