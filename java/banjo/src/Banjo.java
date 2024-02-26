@@ -1,12 +1,18 @@
 public class Banjo {
 
     public static String areYouPlayingBanjo(String name) {
-        return name;
+        if (name.toLowerCase().startsWith("r")) {
+            return name + " plays banjo";
+        } else {
+            return name + " does not play banjo";
+        }
     }
     public static void main(String[] args) {
-        System.out.println("Hello areYouPlayingBanjo");
+        System.out.println("Hello, let's check if you're playing banjo:");
+
         Banjo aBanjo = new Banjo();
-        aBanjo.areYouPlayingBanjo("Jack");
+        String result = aBanjo.areYouPlayingBanjo("Jack");
+        System.out.println(result);
 
     }
     
