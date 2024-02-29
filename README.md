@@ -62,6 +62,8 @@ boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
 
+smashWords: returns string comprised of concatenated strings from input array.
+
 oddOrEven: returns string even or odd depending on total of input array of integers.
 
 squareDigits: returns square of every digit from int input and concatenates them. 
