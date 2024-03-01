@@ -1,10 +1,12 @@
 public class SquareChecker {
 
         public static boolean checkForSquare(int inputNum) {
-            System.out.println("Hello checkForSquare");
+            if(inputNum < 0) {
+                return false;
+            }
             return true;
         }
     public static void main(String[] args) {
-        System.out.println(checkForSquare(4));
+        System.out.println(checkForSquare(-1));
     }
 }
