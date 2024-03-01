@@ -62,6 +62,8 @@ boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
 
+checkForSquare: returns true if input int is a square root and false otherwise. 
+
 smashWords: returns string comprised of concatenated strings from input array.
 
 oddOrEven: returns string even or odd depending on total of input array of integers.
