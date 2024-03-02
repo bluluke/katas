@@ -1,13 +1,18 @@
+
+
 public class RemoveLowest {
  
     public static int[] removesLowest(int[] numbers) {
-        System.out.println("Hello removesLowest!");
-        return null;
+        if(numbers == null || numbers.length == 0) {
+            return null;
+        }
+        int[] returnArray = new int[] {1, 2, 3};
+        return returnArray;
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello RemoveLowest");
-        int[] intArray = new int[] {1, 2};
-        removesLowest(intArray);
+
+        int[] intArray = new int[0];
+        System.out.println(removesLowest(intArray));
     }
 }
