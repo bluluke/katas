@@ -53,7 +53,6 @@ maskify: returns input with all but last 4 characters replaced with #.
 sumOf2LowestPosInts: returns the sum of the two lowest positive integers from input array,
 
 ## Python
-doublesString: returns string containing each character from input string doubled. 
 
 square_sum: squares each integer element from input array and returns the sum of them.  
 
@@ -62,6 +61,8 @@ digitize: takes int input and returns array containing individual digits of int 
 boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
+
+doublesString: returns string containing each character from input string doubled. 
 
 removesLowest: returns new array with lowest int from input array removed. 
 
