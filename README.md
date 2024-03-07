@@ -62,6 +62,8 @@ boolean_to_string: takes boolean input and returns boolean value as a string.
 
 ## Java Kata Descriptions:
 
+opposite: returns additive inverse double of input double. 
+
 getMiddleCharacter: return middle character/characters of input string. 
 
 countPassengers: returns total of 2 input integers from input ArrayList. 
