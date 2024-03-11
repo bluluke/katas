@@ -40,5 +40,16 @@ describe('rowSumOddNumbers', () => {
         expect(actual2).toBe(expected2);
         expect(actual3).toBe(expected3);
         expect(actual4).toBe(expected4);
+    });
+    test('Should return 0 from input of 0', () => {
+        //arrange
+        const expected = 0;
+        const input = 0;
+
+        //act
+        const actual = rowSumOddNumbers(input);
+        
+        //assert
+        expect(actual).toBe(expected);
     })
 })
