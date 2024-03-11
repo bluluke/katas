@@ -4,6 +4,9 @@ This is a repo of katas I have completed using TDD (unless stated otherwise) to 
 
 
 ## Javascript Function Descriptions:
+
+rowSumOddNumbers: from a triangle represented by ascending odd integers, return the total of the integers on the row specified by the input integer. First row is 1. Second row is 3 and 5. Third row is 7, 9 and 11, and so on. 
+
 longest: from an input of 2 strings, returns string containing one instance of each letter present in either of the 2 string inputs in alphabetical order and lowercase.
 
 getSum: returns total of 2 integer inputs in addition to all integer values between the 2 integer inputs.
