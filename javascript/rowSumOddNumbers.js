@@ -1,25 +1,11 @@
 const rowSumOddNumbers = (n) => {
+    const firstOddNumber = (n * (n - 1)) + 1;
+    let total = 0;
 
-    let numToSkip = 0; 
- 
-for(let i = 1; i <= n; i++) {
-    if(i !== n) {
-        numToSkip += i; 
-    } 
+    for (let i = 0; i < n; i++) {
+        total += firstOddNumber + (2 * i);
+    }
+
+    return total;
 }
-
-let oddNum = 1;
-for(let i = 0; i < numToSkip; i++) {
-    oddNum +=2;
-}
-
-let total = 0;
-for(let i = 1; i <= n; i++) {
-    total += oddNum;
-    oddNum += 2;
-}
-return total;
-}
-
-
 module.exports = { rowSumOddNumbers };
