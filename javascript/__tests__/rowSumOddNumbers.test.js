@@ -9,5 +9,14 @@ describe('rowSumOddNumbers', () => {
         const actual = rowSumOddNumbers(input);
         //assert
         expect(actual).toBe(expected);
+    });
+    test('returns integer 8 from input of 2', () => {
+        //arrange
+        const expected = 8;
+        const input = 2;
+        //act
+        const actual = rowSumOddNumbers(input);
+        //assert
+        expect(actual).toBe(expected);
     })
 })
