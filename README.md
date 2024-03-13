@@ -114,3 +114,7 @@ ReverseString: reverses string argument.
 EndsWith: checks if first argument string ends with 2nd argument string (not built with TDD). 
 
 SpinWords: reverses words in input string which have a length of 5 or more. 
+
+## C_Sharp
+
+Paper: returns integer result from mulplication of first input integer by second input integer
