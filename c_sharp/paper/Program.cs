@@ -2,11 +2,14 @@
 
 class Program
 {
-    public static void Paper() {
-        Console.WriteLine("Hello, Paper function!");
+    public static int Paper(int people, int piecesPerPerson) {
+        return people * piecesPerPerson;
     }
     static void Main(String[] args)
     {
-        Paper();
+        Console.WriteLine(Paper(1, 3)); 
+        Console.WriteLine(Paper(10, 9));
+        Console.WriteLine(Paper(44, 18));
+        Console.WriteLine(Paper(200, 6));
     }
 }
