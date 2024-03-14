@@ -5,15 +5,11 @@
 class Program 
 {
     public static bool SetAlarm(bool employed, bool onVacation) {
-    if(!employed) {
-        return false;
-    } else {
-        if(onVacation) {
-            return false;
-        } else {
+        if(employed && !onVacation) {
             return true;
+        } else {
+            return false;
         }
-    }
 }
     static void Main(string[] args)
     {
