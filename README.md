@@ -117,4 +117,6 @@ SpinWords: reverses words in input string which have a length of 5 or more.
 
 ## C_Sharp
 
+SetAlarm: returns true if first input is true and second input is false, otherwise return false. 
+
 Paper: returns integer result from mulplication of first input integer by second input integer
