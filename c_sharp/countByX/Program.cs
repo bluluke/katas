@@ -3,7 +3,10 @@
 
 public static class Program {
 
-    static void Main(string[] args) {
+    public static void CountByX() {
         Console.WriteLine("Hello, CountByX!");
+    }
+    static void Main(string[] args) {
+        CountByX();
     }
 }
