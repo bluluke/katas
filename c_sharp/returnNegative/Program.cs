@@ -2,8 +2,11 @@
 
 
 class Program {
+    public static void ReturnNegative() {
+    Console.WriteLine("Hello, ReturnNegative!");
+}
     static void Main(String[] args) {
-        Console.WriteLine("Hello, ReturnNegative Program!");
+        ReturnNegative();
          
     }
 }
