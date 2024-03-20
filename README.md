@@ -117,6 +117,8 @@ SpinWords: reverses words in input string which have a length of 5 or more.
 
 ## C_Sharp
 
+ReturnNegative: returns negative integer corresponding to input integer. 
+
 ArraysInversion: returns list of inverse integers from input array of integers. 
 
 SetAlarm: returns true if first input is true and second input is false, otherwise return false. 
