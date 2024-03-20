@@ -2,11 +2,17 @@
 
 
 class Program {
-    public static void ReturnNegative() {
-    Console.WriteLine("Hello, ReturnNegative!");
+    public static int ReturnNegative(int num) {
+    if(num <= 0) {
+        return num;
+    } else {
+        return -num;
+    }
 }
     static void Main(String[] args) {
-        ReturnNegative();
+        Console.WriteLine(ReturnNegative(5));
+        Console.WriteLine(ReturnNegative(-19));
+        Console.WriteLine(ReturnNegative(0));
          
     }
 }
