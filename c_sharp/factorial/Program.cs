@@ -2,7 +2,11 @@
 
 
 class Program {
-    static void Main(string[] args) {
+
+    public static void Factorial() {
         Console.WriteLine("Hello, Factorial!");
+    }
+    static void Main(string[] args) {
+        Factorial();
     }
 }
