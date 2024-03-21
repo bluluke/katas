@@ -2,7 +2,11 @@
 
 
 class Program {
+
+    public static void Fibonacci() {
+        Console.WriteLine("Hello, Fibonacci!");
+    }
     static void Main(string[] args) {
-        Console.WriteLine("Hello, Fibonacci Program!");
+        Fibonacci();
     }
 }
