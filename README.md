@@ -117,6 +117,8 @@ SpinWords: reverses words in input string which have a length of 5 or more.
 
 ## C_Sharp
 
+CountArrays: returns integer number of  arrays in input nested array. 
+
 Fibonacci: returns number from fibonacci sequence specified by input integer.
 
 Factorial: returns factorial of input integer.
