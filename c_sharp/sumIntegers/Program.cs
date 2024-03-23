@@ -4,6 +4,9 @@
 class Program {
 
     public static int SumIntegers(int num) {
+        if(num < 1) {
+            return 0; 
+        }
         if(num == 1) {
             return 1;
         } 
@@ -13,5 +16,6 @@ class Program {
         Console.WriteLine(SumIntegers(5)); 
         Console.WriteLine(SumIntegers(6)); 
         Console.WriteLine(SumIntegers(7)); 
+        Console.WriteLine(SumIntegers(-1)); 
     }
 }
