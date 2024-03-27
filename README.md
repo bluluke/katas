@@ -117,6 +117,8 @@ SpinWords: reverses words in input string which have a length of 5 or more.
 
 ## C_Sharp
 
+CalculateCircleArea: returns area of circle as a double from input double representing radius. 
+
 SumIntegers: returns sum of positive integers up to and including input integer. 
 
 CountArrays: returns integer number of  arrays in input nested array. 
