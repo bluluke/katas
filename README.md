@@ -117,6 +117,8 @@ SpinWords: reverses words in input string which have a length of 5 or more.
 
 ## C_Sharp
 
+ReverseString: returns input string reversed. 
+
 CapitaliseFirstLetterEachWord: returns input string with first letter of each word capitalised.
 
 SecondsToHours: returns double representing number of hours equal to input integer. 
